@@ -3,8 +3,6 @@
 Openly-licensed data bundled into the [HSK Hanzi](https://github.com/HSK-Hanzi/iOS) app,
 consumed as a git submodule at `Data/Open`. Always bundled, in every build.
 
-Large binary property lists are stored with [Git LFS](https://git-lfs.com).
-
 ## Contents
 
 - `CEDICT.plist` — CC-CEDICT Chinese–English dictionary (CC BY-SA 4.0).
