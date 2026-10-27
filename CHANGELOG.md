@@ -13,6 +13,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- `CharacterRadicals.plist` records each CC-CEDICT character's Kangxi radical and residual stroke
+  count, and lists the radicals with their glyphs and stroke counts, from the Unicode Han Database
+  (Unicode License v3).
+- `GrammarPoints.plist` lists the grammar points of each HSK 3.0 level with a pattern and a short
+  explanation, and each `PracticeSentences.plist` entry records the points it uses as
+  `grammarPoints`, in place of the workbook-based `grammar` tag.
+- `PracticeSentences.plist` holds example sentences written for the grammar points no other
+  sentence uses, so every point has examples. Those for a point whose word no HSK syllabus lists
+  (动辄) carry no level.
+
 - `PracticeSentences.plist` holds example sentences for every headword of the three HSK syllabi,
   alongside the sentences it held before, which keep their ids. Each entry records its word
   segmentation as `words` and its level in each HSK standard as `levels` (`old`, `new`, `newest`),

@@ -12,6 +12,10 @@ consumed as a git submodule at `Data/Open`. Always bundled, in every build.
 - `SUBTLEX-CH-Words.plist` — SUBTLEX-CH word frequencies (Cai & Brysbaert 2010).
 - `CharacterReadings.plist`, `CharacterEtymology.plist`, `CharacterFrequency.plist` — per-character
   readings, etymology, and frequency.
+- `CharacterRadicals.plist` — each CC-CEDICT character's Kangxi radical and residual stroke count,
+  and the radicals themselves, from the Unicode Han Database (Unicode License v3).
+- `GrammarPoints.plist` — the grammar points of each HSK 3.0 level, with a pattern and explanation
+  written for the app with the Claude API (`Tools/generate_grammar.py`).
 - `PracticeSentences.plist` — original practice sentences generated for the app with the Claude API
   (`Tools/generate_sentences.py` in the app repository): example sentences for every HSK
   headword, each with numbered pinyin, an English translation, its word segmentation, and its
