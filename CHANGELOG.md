@@ -13,6 +13,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- `PracticeSentences.plist` holds example sentences for every headword of the three HSK syllabi,
+  alongside the sentences it held before, which keep their ids. Each entry records its word
+  segmentation as `words` and its level in each HSK standard as `levels` (`old`, `new`, `newest`),
+  in place of the single HSK 2.0 `level`; a standard whose syllabus doesn't cover every word in a
+  sentence gives it no level. Generated entries also record the `target` word they were written
+  for, a `topic`, and, at the lower bands, the `grammar` structure they practice. The file is now a
+  binary property list.
+
 - `HSKVocabulary.plist` records each word's reading in every HSK syllabus that lists it, as
   `syllabusReadings` (standard → lowercase tone-marked letters, in list order), from the HSK 2.0
   lists of clem109/hsk-vocabulary (MIT) and the HSK 3.0 2021 and 2026 lists of krmanik/HSK-3.0

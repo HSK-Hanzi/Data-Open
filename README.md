@@ -12,6 +12,9 @@ consumed as a git submodule at `Data/Open`. Always bundled, in every build.
 - `SUBTLEX-CH-Words.plist` — SUBTLEX-CH word frequencies (Cai & Brysbaert 2010).
 - `CharacterReadings.plist`, `CharacterEtymology.plist`, `CharacterFrequency.plist` — per-character
   readings, etymology, and frequency.
-- `PracticeSentences.plist` — openly-licensed practice sentence corpus.
+- `PracticeSentences.plist` — original practice sentences generated for the app with the Claude API
+  (`Tools/generate_sentences.py` in the app repository): example sentences for every HSK
+  headword, each with numbered pinyin, an English translation, its word segmentation, and its
+  level in each HSK standard.
 
 Each plist uses a self-describing `{ meta, entries }` schema.
